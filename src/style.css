@@ -1,0 +1,28 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+
+.draggable{
+  position: absolute;
+  height:200px;
+  width: 300px;
+  border: 5px dotted orange;
+  cursor: pointer;
+  background:rgba(200, 200, 10, 0.5)
+}
+
+.draggable::before {
+  content: "DRAG ME AROUND";
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
